@@ -2787,3 +2787,8 @@ body {
 .content .blank-area .green {
   color: #52bea6;
 }
+/* line 35, ../sass/_mystyle.scss */
+.content .content-head {
+  height: 900px;
+  background-image: url("pictures/sunset-resized.jpg");
+}
