@@ -72,8 +72,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url(".//fontawesome-webfont.eot?v=4.2.0");
-  src: url(".//fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url(".//fontawesome-webfont.woff?v=4.2.0") format("woff"), url(".//fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url(".//fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
+  src: url("./font-awesome//fontawesome-webfont.eot?v=4.2.0");
+  src: url("./font-awesome//fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("./font-awesome//fontawesome-webfont.woff?v=4.2.0") format("woff"), url("./font-awesome//fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("./font-awesome//fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -2751,25 +2751,17 @@ body {
   background-color: #566473;
 }
 
-/* line 5, ../sass/_mystyle.scss */
+/* line 4, ../sass/_mystyle.scss */
 .content {
   width: 90%;
   margin: 100px auto;
-  text-align: center;
   background-color: white;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-/* line 13, ../sass/_mystyle.scss */
+/* line 11, ../sass/_mystyle.scss */
 .content img {
   width: 100%;
   display: inline-block;
   margin-top: 80px;
-}
-
-/* line 21, ../sass/_mystyle.scss */
-.dot {
-  color: red;
-  font-size: 20px;
-  border-radius: 100%;
 }
