@@ -2763,5 +2763,27 @@ body {
 .content img {
   width: 100%;
   display: inline-block;
-  margin-top: 80px;
+}
+/* line 16, ../sass/_mystyle.scss */
+.content .blank-area {
+  font-size: 30px;
+  line-height: 80px;
+  padding-left: 30px;
+}
+/* line 20, ../sass/_mystyle.scss */
+.content .blank-area i {
+  display: inline-block;
+  margin-right: 10px;
+}
+/* line 24, ../sass/_mystyle.scss */
+.content .blank-area .red {
+  color: #e76747;
+}
+/* line 27, ../sass/_mystyle.scss */
+.content .blank-area .yellow {
+  color: #fac002;
+}
+/* line 30, ../sass/_mystyle.scss */
+.content .blank-area .green {
+  color: #52bea6;
 }
