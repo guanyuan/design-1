@@ -64,6 +64,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/* line 4, ../sass/style.scss */
+body {
+  background-color: #566473;
+  font-family: Sans-serif;
+}
+
+/* line 8, ../sass/style.scss */
+.content-body {
+  width: 90%;
+  margin: 100px auto;
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2746,76 +2761,431 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   content: "";
 }
 
-/* line 1, ../sass/_mystyle.scss */
-body {
-  background-color: #566473;
-  font-family: Sans-serif;
-}
-
-/* line 5, ../sass/_mystyle.scss */
-.content {
-  width: 90%;
-  margin: 100px auto;
-  background-color: white;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-/* line 11, ../sass/_mystyle.scss */
-.content img {
-  width: 100%;
-  display: inline-block;
-}
-/* line 15, ../sass/_mystyle.scss */
-.content .blank-area {
+/* line 1, ../sass/partitials/_blank_header.scss */
+.blank-header {
   font-size: 30px;
   line-height: 80px;
   padding-left: 30px;
 }
-/* line 19, ../sass/_mystyle.scss */
-.content .blank-area i {
+/* line 5, ../sass/partitials/_blank_header.scss */
+.blank-header i {
   display: inline-block;
   margin-right: 10px;
 }
-/* line 23, ../sass/_mystyle.scss */
-.content .blank-area .red {
+/* line 9, ../sass/partitials/_blank_header.scss */
+.blank-header .red {
   color: #e76747;
 }
-/* line 26, ../sass/_mystyle.scss */
-.content .blank-area .yellow {
+/* line 12, ../sass/partitials/_blank_header.scss */
+.blank-header .yellow {
   color: #fac002;
 }
-/* line 29, ../sass/_mystyle.scss */
-.content .blank-area .green {
+/* line 15, ../sass/partitials/_blank_header.scss */
+.blank-header .green {
   color: #52bea6;
 }
-/* line 33, ../sass/_mystyle.scss */
-.content .content-head {
+
+/* line 1, ../sass/partitials/_background_head.scss */
+.background-head {
   position: relative;
-  height: 900px;
+  height: 1010px;
   background-image: url("pictures/sunset-resized.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
-/* line 37, ../sass/_mystyle.scss */
-.content .content-head .log-sign {
+/* line 7, ../sass/partitials/_background_head.scss */
+.background-head .log-sign {
   position: absolute;
   top: 50px;
   right: 200px;
   list-style: none;
 }
-/* line 43, ../sass/_mystyle.scss */
-.content .content-head .log-sign li {
+/* line 12, ../sass/partitials/_background_head.scss */
+.background-head .log-sign li {
   display: inline-block;
   margin-left: 15px;
 }
-/* line 46, ../sass/_mystyle.scss */
-.content .content-head .log-sign li a {
+/* line 15, ../sass/partitials/_background_head.scss */
+.background-head .log-sign li a {
   text-decoration: none;
   font-size: 24px;
   color: white;
 }
-/* line 52, ../sass/_mystyle.scss */
-.content .content-head .log-sign li:nth-child(3) {
+/* line 21, ../sass/partitials/_background_head.scss */
+.background-head .log-sign li:nth-child(3) {
   margin-left: 36px;
   padding: 12px;
   border: 1px solid white;
   border-radius: 10px;
+}
+/* line 28, ../sass/partitials/_background_head.scss */
+.background-head .agent-search-upside {
+  position: absolute;
+  margin-top: 40%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* line 34, ../sass/partitials/_background_head.scss */
+.background-head .agent-search-upside h1 {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 10px;
+}
+/* line 39, ../sass/partitials/_background_head.scss */
+.background-head .agent-search-upside p {
+  color: #FDE;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+/* line 48, ../sass/partitials/_background_head.scss */
+.background-head .agent-search-upside .search .search-text {
+  font-size: 15px;
+  float: left;
+  display: inline-block;
+  width: 400px;
+  line-height: 60px;
+  padding-left: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+}
+/* line 57, ../sass/partitials/_background_head.scss */
+.background-head .agent-search-upside .search .search-text::-webkit-input-placeholder {
+  color: white;
+}
+/* line 61, ../sass/partitials/_background_head.scss */
+.background-head .agent-search-upside .search .search-button {
+  font-size: 15px;
+  float: left;
+  background-color: #67ddab;
+  display: inline-block;
+  width: 110px;
+  color: white;
+  line-height: 60px;
+}
+
+/* line 2, ../sass/partitials/_work_flow.scss */
+.work-flow .subject {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 100px;
+}
+/* line 8, ../sass/partitials/_work_flow.scss */
+.work-flow .horiz-line {
+  position: relative;
+  top: 30px;
+  border-bottom: 1px solid black;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 16, ../sass/partitials/_work_flow.scss */
+.work-flow .steps {
+  position: relative;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 23, ../sass/partitials/_work_flow.scss */
+.work-flow .steps .fa {
+  font-size: 100px;
+  margin-bottom: 30px;
+}
+/* line 26, ../sass/partitials/_work_flow.scss */
+.work-flow .steps .fa.fa-university {
+  color: #eca95a;
+}
+/* line 29, ../sass/partitials/_work_flow.scss */
+.work-flow .steps .fa.fa-pencil {
+  color: #ad9dd3;
+}
+/* line 32, ../sass/partitials/_work_flow.scss */
+.work-flow .steps .fa.fa-bus {
+  color: #4d99cb;
+}
+/* line 36, ../sass/partitials/_work_flow.scss */
+.work-flow .steps .step {
+  display: inline-block;
+  width: 32%;
+  text-align: center;
+}
+/* line 40, ../sass/partitials/_work_flow.scss */
+.work-flow .steps .step .seq {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: 1px solid black;
+  line-height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  background-color: white;
+}
+/* line 54, ../sass/partitials/_work_flow.scss */
+.work-flow .steps .step .title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/* line 59, ../sass/partitials/_work_flow.scss */
+.work-flow .steps .step .description {
+  font-size: 20px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 1, ../sass/partitials/_reason_list.scss */
+.reason-list {
+  border-bottom: 1px solid black;
+}
+/* line 3, ../sass/partitials/_reason_list.scss */
+.reason-list .title {
+  border-top: 1px solid black;
+  margin-top: 120px;
+  line-height: 10;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 11, ../sass/partitials/_reason_list.scss */
+.reason-list .reasons {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 18, ../sass/partitials/_reason_list.scss */
+.reason-list li {
+  display: inline-block;
+  width: 40%;
+}
+/* line 21, ../sass/partitials/_reason_list.scss */
+.reason-list li:nth-child(2n) {
+  padding-left: 150px;
+}
+/* line 24, ../sass/partitials/_reason_list.scss */
+.reason-list li h3, .reason-list li p {
+  padding-left: 100px;
+}
+/* line 27, ../sass/partitials/_reason_list.scss */
+.reason-list li h3 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 2;
+}
+/* line 32, ../sass/partitials/_reason_list.scss */
+.reason-list li p {
+  font-size: 15px;
+}
+/* line 35, ../sass/partitials/_reason_list.scss */
+.reason-list li .fa {
+  position: relative;
+  top: 60px;
+  font-size: 50px;
+}
+/* line 39, ../sass/partitials/_reason_list.scss */
+.reason-list li .fa.fa-check {
+  color: #66be93;
+}
+/* line 42, ../sass/partitials/_reason_list.scss */
+.reason-list li .fa.fa-tag {
+  color: #eca95a;
+}
+/* line 45, ../sass/partitials/_reason_list.scss */
+.reason-list li .fa.fa-refresh {
+  color: #f26d7e;
+}
+/* line 48, ../sass/partitials/_reason_list.scss */
+.reason-list li .fa.fa-male {
+  color: #01b4ea;
+}
+/* line 51, ../sass/partitials/_reason_list.scss */
+.reason-list li .fa.fa-thumbs-up {
+  color: #af7ac4;
+}
+/* line 54, ../sass/partitials/_reason_list.scss */
+.reason-list li .fa.fa-newspaper-o {
+  color: #ed7f5b;
+}
+
+/* line 1, ../sass/partitials/_statistics_data.scss */
+.statistics-data {
+  width: 70%;
+  position: relative;
+  bottom: 100px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: white;
+  display: inline-block;
+}
+/* line 9, ../sass/partitials/_statistics_data.scss */
+.statistics-data li {
+  display: inline-block;
+  width: 24%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  float: left;
+  text-align: center;
+  border: 1px solid grey;
+}
+/* line 19, ../sass/partitials/_statistics_data.scss */
+.statistics-data li .number {
+  line-height: 2.5;
+  font-size: 36px;
+  font-weight: bold;
+}
+/* line 24, ../sass/partitials/_statistics_data.scss */
+.statistics-data li .tag {
+  font-size: 20px;
+}
+
+/* line 2, ../sass/partitials/_testimonial_feedback.scss */
+.testimonial-feedback .tab {
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+/* line 6, ../sass/partitials/_testimonial_feedback.scss */
+.testimonial-feedback .tab .testimonial {
+  background-color: #60677a;
+  color: white;
+}
+/* line 10, ../sass/partitials/_testimonial_feedback.scss */
+.testimonial-feedback .tab div {
+  display: inline-block;
+  width: 48%;
+  line-height: 4;
+  text-align: center;
+  border: 1px solid #60677a;
+  font-size: 18px;
+  color: #60677a;
+}
+/* line 19, ../sass/partitials/_testimonial_feedback.scss */
+.testimonial-feedback .tab div:hover {
+  background-color: #60677a;
+  color: white;
+}
+/* line 24, ../sass/partitials/_testimonial_feedback.scss */
+.testimonial-feedback .fa {
+  display: block;
+  color: #e2e2e2;
+  font-size: 40px;
+  width: 40px;
+  margin: 30px auto;
+}
+/* line 31, ../sass/partitials/_testimonial_feedback.scss */
+.testimonial-feedback .cite {
+  width: 70%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #60677a;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 40, ../sass/partitials/_testimonial_feedback.scss */
+.testimonial-feedback .person-introd {
+  margin: 50px auto;
+  width: 300px;
+  text-align: center;
+}
+/* line 44, ../sass/partitials/_testimonial_feedback.scss */
+.testimonial-feedback .person-introd .name {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 2;
+}
+/* line 50, ../sass/partitials/_testimonial_feedback.scss */
+.testimonial-feedback .photo-list {
+  text-align: center;
+  padding-bottom: 150px;
+}
+/* line 53, ../sass/partitials/_testimonial_feedback.scss */
+.testimonial-feedback .photo-list img {
+  display: inline-block;
+  margin-left: 20px;
+  width: 150px;
+  border-radius: 100%;
+  border: 1px solid black;
+}
+
+/* line 1, ../sass/partitials/_background_footer.scss */
+.background-footer {
+  height: 300px;
+  background-image: url("pictures/photo_wall.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  position: relative;
+}
+/* line 7, ../sass/partitials/_background_footer.scss */
+.background-footer div {
+  display: inline-block;
+}
+/* line 10, ../sass/partitials/_background_footer.scss */
+.background-footer .content {
+  margin-left: 25%;
+  margin-top: 10%;
+}
+/* line 13, ../sass/partitials/_background_footer.scss */
+.background-footer .content .title {
+  font-size: 25px;
+  color: white;
+  line-height: 60px;
+  vertical-align: bottom;
+  padding-right: 20px;
+}
+/* line 21, ../sass/partitials/_background_footer.scss */
+.background-footer .content .search .search-text {
+  font-size: 15px;
+  float: left;
+  display: inline-block;
+  width: 400px;
+  line-height: 60px;
+  padding-left: 40px;
+  background-color: white;
+  border: none;
+}
+/* line 30, ../sass/partitials/_background_footer.scss */
+.background-footer .content .search .search-text::-webkit-input-placeholder {
+  color: black;
+}
+/* line 34, ../sass/partitials/_background_footer.scss */
+.background-footer .content .search .search-button {
+  text-align: center;
+  font-size: 15px;
+  float: left;
+  background-color: #67ddab;
+  display: inline-block;
+  width: 110px;
+  color: white;
+  line-height: 60px;
+}
+
+/* line 1, ../sass/partitials/_blank_footer.scss */
+.blank-footer {
+  padding: 30px;
+}
+/* line 3, ../sass/partitials/_blank_footer.scss */
+.blank-footer ul {
+  display: inline-block;
+}
+/* line 5, ../sass/partitials/_blank_footer.scss */
+.blank-footer ul li {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline-block;
+}
+/* line 11, ../sass/partitials/_blank_footer.scss */
+.blank-footer .menu-list {
+  margin-left: 100px;
+  color: #60677a;
+  font-size: 15px;
+}
+/* line 16, ../sass/partitials/_blank_footer.scss */
+.blank-footer .logo-list {
+  font-size: 20px;
+  padding-left: 500px;
 }

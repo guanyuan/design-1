@@ -1,4 +1,24 @@
 @import "compass/reset";
 @import "compass/css3";
+
+body {
+    background-color: #566473;
+    font-family: Sans-serif;
+}
+.content-body {
+    width: 90%;
+    margin: 100px auto;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
 @import "font-awesome/font-awesome.scss";
-@import "mystyle.scss"
+@import "partitials/blank_header.scss";
+@import "partitials/background_head.scss";
+@import "partitials/work_flow.scss";
+@import "partitials/reason_list.scss";
+@import "partitials/statistics_data.scss";
+@import "partitials/testimonial_feedback.scss";
+@import "partitials/background_footer.scss";
+@import "partitials/blank_footer.scss";
